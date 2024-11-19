@@ -1,10 +1,10 @@
-## Closeread Workshop
+# Closeread Workshop
 
 Materials for a one hour workshop on using the Closeread extension for Quarto to author scrollytelling articles with data from plain markdown. Throughout the workshop, please refer to the official documentation: <https://closeread.dev/>.
 
-### Agenda
+## Agenda
 
-#### 1. What is Scrollytelling?
+### 1. What is Scrollytelling?
 
 Examples:
 
@@ -13,12 +13,12 @@ Examples:
 - [Childhood cultural capital and adult wealth](https://mschnetzer.github.io/scrollytell_cultcap/)
 
 
-#### 2. Components of a Closeread
+### 2. Components of a Closeread
 
-*Starting doc*: <components-of-closeread.qmd>
-*Solution*: <components-of-closeread-solution.qmd>
+*Starting doc*: components-of-closeread.qmd
+*Solution*: solutions/components-of-closeread-solution.qmd
 
-**Our Turn**
+#### Our Turn
 
 1. Experiment with different quarto formats.
 2. Instructor only: Remove `_extension` then run `quarto add qmd-lab/closeread` in this directory.
@@ -28,38 +28,37 @@ Examples:
 6. Add triggers to the items with `@cr-`.
 7. Change styles.
 
-**Your Turn**
+#### Your Turn
 
 1. Change more styles.
 2. Create second `cr-section`.
 
-**Our Turn Again**
+#### Our Turn Again
 
 1. Turn on debug mode
 
 
-#### 2. Working with Text and Code
+### 2. Working with Text and Code
 
-*Starting doc*: <text-and-code.qmd>
-*Solution*: <text-and-code-solution.qmd>
+*Starting doc*: text-and-code.qmd
+*Solution*: solutions/text-and-code.qmd
 
-**Our Turn**
+#### Our Turn
 
 1. Flag the poem as a sticky.
-2. Add a trigger on the first narrative block.
-3. Add a focus effect to the second block: `highlight="1"`.
-4. Add a span id to a phrase.
-5. Add a focus effect to third block to highlight the span.
+2. Add `.scale-to-fit`
+3. Add a trigger on the first narrative block.
+4. Add a focus effect to the second block: `highlight="1"`.
+5. Add a span id to a phrase.
+6. Add a focus effect to third block to highlight the span.
 
-**Your Turn**
+#### Your Turn
 
-1. Create a second `cr-section` for the second half of the article.
-2. Flag the code as a sticky.
-3. Add a trigger on the first narrative block in the section.
-4. Add focus effects to highlight and/or zoom the appropriate lines (same syntax as text).
-5. Change layout to `sidebar-right`.
+Create a second closeread section for the second half of the document and treat the code as a sticky. Add focus effects (highlight and zoom) and change the layout and styles to differentiate the second section.
 
 
+
+To be added:
 -  static-images.qmd (encompassing things from minard and build a plot + pan and zoom)
 -  animated-graphics.qmd (ojs)
 - Coming soon:
