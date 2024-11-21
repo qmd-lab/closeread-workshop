@@ -2,7 +2,6 @@
 title: "Text and Code"
 format:
   closeread-html:
-    mainfont: Garamond
     cr-style:
       section-background-color: white
       narrative-background-color-sidebar: "#111111"
@@ -18,19 +17,14 @@ Certain types of text and code have similarities in how they're stored in a docu
 \
 \
 
-:::{.cr-section}
-
-:::{focus-on="cr-bellringer"}
 ## Working with Text
 
 This is a poem. It's called "Bellringer", by Rita Dove.
-:::
 
-::: {#cr-bellringer .scale-to-fill}
 | I was given a name, it came out of a book—
 | I don’t know which. I’ve been told the Great Man
 | could recite every title in order on its shelf.
-| Well, [I was born]{#cr-born}, and that’s a good thing,
+| Well, I was born, and that’s a good thing,
 | although I arrived on the day of his passing,
 | 
 | a day on which our country fell into mourning.
@@ -40,20 +34,19 @@ This is a poem. It's called "Bellringer", by Rita Dove.
 | in third person—a pretty way of saying
 | 
 | more than two men in a room means the third
-| can be ignored, as I was [when they spoke]{#cr-birth1}
-| [of my birth]{#cr-birth2} and Mr. Jefferson’s death
-| in one breath, voices [dusted with wonderment]{#cr-wonder},
+| can be ignored, as I was when they spoke
+| of my birth and Mr. Jefferson’s death
+| in one breath, voices dusted with wonderment,
 | faint sunlight quivering on a hidden breeze.
-:::
 
-It starts with the narrator reflecting on their name and it's source - a book - as if it were predestined. [@cr-bellringer]{highlight="1"}
+It starts with the narrator reflecting on their name and it's source - a book - as if it were predestined.
 
-The author refers to their birth twice: one here... [@cr-bellringer]{highlight="cr-born"}
+The author refers to their birth twice: one here...
 
-... and again, further down. [@cr-bellringer]{highlight="cr-birth1,cr-birth2"}
+... and again, further down.
 
-The poem ends with lovely lyricism. [@cr-bellringer]{hlz="cr-wonder"}
-:::
+The poem ends with lovely lyricism.
+
 
 ## Working with Code
 

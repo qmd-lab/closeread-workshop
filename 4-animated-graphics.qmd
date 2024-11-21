@@ -37,20 +37,16 @@ angleScale1 = d3.scaleLinear()
 angle1 = angleScale1(crProgressBlock)
 ```
 
-::::{.cr-section layout="overlay-center"}
 
-:::{.progress-block}
-The planet that we live on is very . . . @cr-globe
+The planet that we live on is very . . .
 
-very . . . @cr-globe
+very . . .
 
-very . . . @cr-globe
+very . . .
 
-big. @cr-globe
+big.
 
-:::
 
-:::{#cr-globe}
 ```{ojs}
 //| echo: false
 Plot.plot({
@@ -83,13 +79,10 @@ Plot.plot({
   ],
   projection: {
     type: "orthographic",
-    rotate: [angle1, -10]
+    rotate: [180, -10]
   }
 })
 ```
-:::
-
-::::
 
 As you back and forth over this Closeread section, note the values of the OJS variables that Closeread makes available in OJS code cells:
 

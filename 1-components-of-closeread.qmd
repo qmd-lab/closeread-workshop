@@ -1,13 +1,6 @@
 ---
 title: "Components of Closeread"
-format:
-  closeread-html:
-    grid:
-      body-width: 400px
-    cr-style:
-      narrative-background-color-sidebar: "#faf3e1"
-      section-background-color: none
-
+format: html
 ---
 
 This article is an introduction to the different components of a Closeread document. The three components of every Closeread document are:
@@ -18,19 +11,14 @@ This article is an introduction to the different components of a Closeread docum
 
 To kick the tires on these components, let's look at an simplified example of a study of penguins. It will feature three stickies: an image, a table generated from data, and a plot generated from data.
 
-:::{.cr-section}
+Penguins can be found as far north as the beaches of South Africa.
 
-Penguins can be found as far north as the beaches of South Africa. @cr-penguins-on-beach
-
-:::{#cr-penguins-on-beach}
 ![Credit: Casey Allen (westbeach013), Unsplash](images/beach-penguins.jpg)
-:::
 
 For this analysis we'll look at data collected on penguins in the Palmer Archipelago in Antarctica. 
 
 Here is a glimpse of the first 10 penguins in the data set. @cr-table
 
-:::{#cr-table}
 ```{r}
 #| message: false
 library(tidyverse)
@@ -42,11 +30,9 @@ penguins |>
   select(species, island, bill_length_mm, bill_depth_mm) |>
   gt()
 ```
-:::
 
-Not surprisingly, the depth of the bill increases as the length of the bill increases. However, each species has distinct ranges of length and depth that are observed. @cr-scatterplot
+Not surprisingly, the depth of the bill increases as the length of the bill increases. However, each species has distinct ranges of length and depth that are observed.
 
-:::{#cr-scatterplot}
 ```{r}
 #| warning: false
 #| fig-width: 5
@@ -58,6 +44,3 @@ ggplot( penguins,
   labs(x = "Bill length (mm)", y = "Bill depth (mm)") +
   theme_bw()
 ```
-:::
-
-:::

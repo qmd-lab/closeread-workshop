@@ -15,53 +15,82 @@ Examples:
 
 ### 2. Components of a Closeread
 
-*Starting doc*: components-of-closeread.qmd
-*Solution*: solutions/components-of-closeread-solution.qmd
+*Starting doc*: 1-components-of-closeread.qmd
+
+*Solution*: solutions/1-components-of-closeread-solution.qmd
+
+#### Prereqs
+
+Two Quarto structures that Closeread takes advantage of is the fenced div and the bracketed span. Please have a look at the [Quarto docs](https://quarto.org/docs/authoring/markdown-basics.html#sec-divs-and-spans) to get a sense of how this syntax works. The syntax is also strongly inspired by the syntax for [cross-references](https://quarto.org/docs/authoring/cross-references.html).
 
 #### Our Turn
 
 1. Experiment with different quarto formats.
 2. Instructor only: Remove `_extension` then run `quarto add qmd-lab/closeread` in this directory.
 3. Switch format to `closeread-html`.
-4. Add `cr-section`.
-5. Flag a few items as stickies with `#cr-` ids.
+4. Add `cr-section` to encompass the image and first code cell for the table.
+5. Flag image and table as stickies with `#cr-` ids.
 6. Add triggers to the items with `@cr-`.
-7. Change styles.
+7. Change [style](https://closeread.dev/guide/styling.html).
+8. Make non-`cr-section` narrower by adjusting the `grid:body-width`.
 
 #### Your Turn
 
-1. Change more styles.
-2. Create second `cr-section`.
+Move the second code cell for the scatterplot into the `cr-section`, make the plot a sticky, then trigger it. Also experiment with additional [styles](https://closeread.dev/guide/styling.html).
 
 #### Our Turn Again
 
-1. Turn on debug mode
+1. Add `.scale-to-fit`
+2. Turn on debug mode
 
 
 ### 2. Working with Text and Code
 
-*Starting doc*: text-and-code.qmd
-*Solution*: solutions/text-and-code.qmd
+*Starting doc*: 2-text-and-code.qmd
+
+*Solution*: solutions/2-text-and-code.qmd
 
 #### Our Turn
 
-1. Flag the poem as a sticky.
-2. Add `.scale-to-fit`
-3. Add a trigger on the first narrative block.
+1. Create a `cr-section` for Working with Text.
+2. Flag the poem as a sticky.
+3. Add `.scale-to-fit`.
+4. Add a trigger on the first narrative block.
+5. Instead, wrap the level 2 header and the first narrative block with a div and use `focus-on` to trigger the poem.
 4. Add a focus effect to the second block: `highlight="1"`.
-5. Add a span id to a phrase.
+5. Add a span id to the first reference to birth.
 6. Add a focus effect to third block to highlight the span.
 
 #### Your Turn
 
-Create a second closeread section for the second half of the document and treat the code as a sticky. Add focus effects (highlight and zoom) and change the layout and styles to differentiate the second section.
+Create a second closeread section for the Working with Code section and treat the code block as a sticky. Split the paragraph into narrative blocks and add focus effects (highlight and zoom) to draw attention to the relevant components of the code.
+
+#### Our Turn
+
+1. Change the layout.
 
 
+### 4. Animated Graphics
+
+*Starting doc*: 4-animated-graphics.qmd
+
+*Solution*: solutions/4-animated-graphics.qmd
+
+#### Our Turn
+
+1. Add a cr-section around the description of our big globe.
+2. Set the layout to `.overlay-center`
+3. Flag the plot as a sticky.
+4. Create a trigger on the first narrative block.
+5. Set the angle in the plot to `crTriggerProgress`.
+6. Wrap the narrative blocks in a `.progress-block`.
+7. Reset the angle to track `crProgressBlock`.
 
 To be added:
 -  static-images.qmd (encompassing things from minard and build a plot + pan and zoom)
--  animated-graphics.qmd (ojs)
-- Coming soon:
-  - videos
-  - figure highlighting
-  - math
+
+### Coming soon
+
+- videos
+- figure highlighting
+- math
