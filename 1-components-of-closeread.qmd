@@ -17,7 +17,7 @@ Penguins can be found as far north as the beaches of South Africa.
 
 For this analysis we'll look at data collected on penguins in the Palmer Archipelago in Antarctica. 
 
-Here is a glimpse of the first 10 penguins in the data set. @cr-table
+Here is a glimpse of the first 10 penguins in the data set.
 
 ```{r}
 #| message: false
