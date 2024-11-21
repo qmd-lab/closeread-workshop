@@ -2,6 +2,18 @@
 
 Materials for a one hour workshop on using the Closeread extension for Quarto to author scrollytelling articles with data from plain markdown. Throughout the workshop, please refer to the official documentation: <https://closeread.dev/>.
 
+## Materials
+
+You can open the materials for this workshop in a Berkeley DataHub account by clicking the links below.
+
+- [Open this repo in RStudio](https://stat20.datahub.berkeley.edu/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fqmd-lab%2Fcloseread-workshop&urlpath=rstudio%2F&branch=main)
+
+Then click on the terminal tab and change your directory to the new file of workshop materials
+
+```bash
+cd closeread-workshop
+```
+
 ## Agenda
 
 ### 1. What is Scrollytelling?
@@ -69,6 +81,16 @@ Create a second closeread section for the Working with Code section and treat th
 
 1. Change the layout.
 
+### 3. Static Graphics
+
+*Starting doc*: 3-static-images.qmd
+
+*Solution*: solutions/3-static-images.qmd
+
+#### Our Turn
+
+1. This will largely be an inspection of how to create an illusion of animation even on static graphics.
+
 
 ### 4. Animated Graphics
 
@@ -85,9 +107,6 @@ Create a second closeread section for the Working with Code section and treat th
 5. Set the angle in the plot to `crTriggerProgress`.
 6. Wrap the narrative blocks in a `.progress-block`.
 7. Reset the angle to track `crProgressBlock`.
-
-To be added:
--  static-images.qmd (encompassing things from minard and build a plot + pan and zoom)
 
 ### Coming soon
 
